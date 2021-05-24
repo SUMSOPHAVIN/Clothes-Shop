@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>Fashion Style Shope </title>
+</head>
+<link rel="stylesheet" href="./css/home.css">
+<script src="./js/index.js"></script>
+<body onload="checkAdmin();  displayWomenProduct(); displayMenProduct(); displayBoysProduct(); displayGirlsProduct(); return false;">
+    <header>
+        <nav>
+        <!-- Logo -->
+      <div class="logo"> <a href="home.html"><img src="./img/Fashion Style logo tra- .png" id="logoImg" alt="logo"></a></div> 
+       <div class="nav-link" id="main-navigation">       
+            <ul>
+                <li ><a href="./home.html">HOME</a></li>
+                <li ><a href="./women.html">WOMEN</a></li>     
+                <li ><a href="./men.html">MEN</a></li>
+                <li ><a href="./boy.html">BOYS</a></li>
+                <li ><a href="./girl.html">GIRLS</a></li>
+                <li ><a href="./myAccount.html">MY ACCOUNT</a></li>
+                <li ><a href="./about_us.html">ABOUT US</a></li>
+                <li ><a href="./Contact_Us.html">CONTACT US</a></li>
+                <!-- Cart Page -->
+                <li><a style=" padding: 20px;" href="./cart_page.html"><img id="cart"  src="./img/order.png" ><div id="cart_number"></div></a></li>
+            <div id="admin_link" style="float:right">
+                <a class="active" href="./admin_page.html"> Admin </a>
+            </div>
+             </ul>
+        </div>
+     </nav>
+    </header>  
+    <div id="bodyPage">
+        <h1>WELCOME TO OUR SHOP</h1>
+        <hr class="borderPage"> 
+        
+        
+        <div class="coverHomePage">
+        </div>
+
+
+        <h2> WOMEN SECTION</h2>
+        <hr>       
+        <div onload="displayWomenProduct(); return false;" id="women_product_box">    
+        </div>
+
+
+        <h2>MEN SECTION</h2>
+        <hr>       
+        <div onload="displayMenProduct(); return false;" id="men_product_box">    
+        </div>
+
+
+        <h2>BOYS SECTION</h2>
+        <hr>       
+        <div onload="displayBoysProduct(); return false;" id="boys_product_box">    
+        </div>
+
+
+        <h2> GIRLS SECTION</h2>
+        <hr>       
+        <div onload="displayGirlsProduct(); return false;" id="girls_product_box">    
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

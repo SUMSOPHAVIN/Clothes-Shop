@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Style Shop</title>
+</head>
+<link   rel="stylesheet" href="./css/index.css">
+<script src="./js/index.js"></script>
+
+
+<body onload="setAdmin(); return false;">
+    
+
+  <header>
+    <nav>
+    <!-- Logo -->
+  <div class="logo"> <a href="home.html"><img src="./img/Fashion Style logo tra- .png" id="logoImg" alt="logo"></a></div> 
+   <div class="nav-link" id="main-navigation">       
+        <ul>
+            <li ><a href="./about_us.html">ABOUT US</a></li>
+            <li ><a href="./Contact_Us.html">CONTACT US</a></li>
+         </ul>
+    </div>
+ </nav>
+</header>  
+<div id="bodyPage">
+    <div id="coverPage" class="container">
+                    <div id="slideBox">
+                
+                   
+                
+                        <div class="mySlides" id="firstSlide">
+                            <img src="./img/Jumpsuit women 2.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides" >
+                          <img src="./img/Jumpsuit women 1.jpg" style="width:100%">
+                      </div>
+
+                
+                        <div class="mySlides">
+                            <img src="./img/Jumpsuit women 5.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <img src="./img/Jumpsuit women 6.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                          <img src="./img/Jumpsuit women 2.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides" >
+                          <img src="./img/Jumpsuit women 1.jpg" style="width:100%">
+                        </div>
+                
+                
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </div>
+                    <hr>
+                
+                  
+                  <div id="choesPic">
+                  <div class="row">
+                    <div class="column">
+                      <img class="demo cursor" src="./img/Jumpsuit women 2.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+                    </div>
+
+                    <div class="column">
+                      <img class="demo cursor" src="./img/Jumpsuit women 1.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/Jumpsuit women 5.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/Jumpsuit women 6.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="./img/Jumpsuit women 2.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+                    </div>
+
+                    <div class="column">
+                      <img class="demo cursor" src="./img/Jumpsuit women 1.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+                    </div>
+                  
+                  </div>
+                  </div>
+                
+    
+    </div>
+
+    <div class="container" >
+        <div class="title">Registration</div>
+        <form action="#" onsubmit="register(); return false;" id="signupform">
+            <div class="user-details">
+                <!-- Name -->
+                <div class="input-box">
+                    <label for="name" class="user-details">Name</label>
+                    <input type="text" name="name" placeholder="Enter your Name" required>
+                </div>
+                <!-- Gmail -->
+                <div class="input-box">
+                    <label for="Gmail" class="user-details">Gmail</label>
+                    <input type="email" name="gmail" placeholder="Enter your Email" required>
+                </div>
+                <!-- Gender -->
+    
+                <div class="category">
+                    <label for="gender" class="gender-title">Gender</label>
+                    <input type="radio" name="gender" id="dot-1" required>
+                    <label for="dot-1">
+                        <span class="gender">Male</span>
+                    </label>
+                    <input type="radio" name="gender" id="dot-2" required>
+                    <label for="dot-2">
+                        <span class="gender">Female</span>
+                    </label>
+                </div>
+                <!-- Date of Birth -->
+                <div class="input-box">
+                    <label for="birthday" class="user-details">Birthday</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+                <!-- Country -->
+                <div class="input-box">
+                    <label for="Country" class="user-details">Country</label>
+                    <input type="text" name="country" placeholder="Enter your Country" required>
+                </div>
+                <!-- Password -->
+                <div class="input-box">
+                    <label for="password" class="user-details">Passwords</label>
+                    <input type="password" name="password" placeholder="Enter your Passwords" required>
+                </div>
+                <!-- Confirm Password -->
+                <div class="input-box">
+                    <label for="password" class="user-details">Confirm Passwords</label>
+                    <input type="password" name="confirmPassword" placeholder="Confirm your Passwords" required>
+                </div>
+
+             </div>
+
+            <div class="button">
+                <input type="submit" value="Registration" id="btRegister">
+                <p>Already have an account?  <a href="./login.html">Sign in</a>.</p>
+
+            </div>
+        </form>
+
+    </div>
+   
+  </div>
+    
+</body>
+</html>
